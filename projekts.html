@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projektu Darbs</title>
+    <link rel="stylesheet" href="projekts.css">
+    <script src="projekts.js"></script>
+</head>
+
+<body>
+    <div class="board">
+        <audio id="audioPlayerStart"></audio>
+        <audio id="hover-soundStart">
+            <source src="audio/tap.wav" type="audio/wav">
+        </audio>
+        <button class="button" type="button" id="buttond" onclick="Writing()">Sākt!</button>
+        <p id="a1"></p><br>
+        <button class="nextButton" id="nextButton" class="button"
+            onclick="Writing2(); playSound('audio/startmousehold.wav')" onmouseover="playSound1()">Sākt projektu
+            apskati!</button>
+    </div>
+
+    <div class="everything" style="display: none;">
+        <div class="wrapper">
+            <div class="header">Laipni lūdzam projektu darbā programmēšanas jomā</div>
+            <div class="main">
+                <div class="boardLeft">
+                    <div class="options" style="display: flex;margin-top: 7%;">
+                        <ul>
+                            <audio id="audioPlayer"></audio>
+                            <audio id="hover-sound">
+                                <source src="audio/mousehold.wav" type="audio/wav">
+                            </audio>
+                            <button class="wiggle-button"
+                                onclick="playSound('audio/Click.wav'); changeColor(this); tglDivs(1)"
+                                onmouseover="playSound2()">1-Sadaļa ▲</button>
+                            <button class="wiggle-button"
+                                onclick="playSound('audio/Click.wav'); tglDivs(2); changeColor(this); "
+                                onmouseover="playSound2()">2-Sadaļa ▶</button>
+                            <button class="wiggle-button"
+                                onclick="playSound('audio/Click.wav'); tglDivs(3); changeColor(this);"
+                                onmouseover="playSound2()">3-Sadaļa ◀</button>
+                            <button class="wiggle-button"
+                                onclick="playSound('audio/Click.wav'); tglDivs(4); changeColor(this);"
+                                onmouseover="playSound2()">4-Sadaļa ▼</button>
+                        </ul>
+                    </div>
+                    <button id="toggle-btn"
+                        style="position: absolute;cursor: pointer;background-color: darkcyan;width: 19.8%;">
+                        <i class="arrow"></i>
+                    </button>
+                </div>
+                <div class="board2" style="display: flex;">
+                    <div class="sec1">
+                        <div class="container">
+                            <h1>Laipni lūdzam vietnē</h1><br><br>
+                            Laipni lūdzam projektā. Lūdzu, sekojiet norādījumiem, kā lietot šo vietni. <br><br> Tas nav
+                            grūti, jo
+                            vietne ir maza, taču es vēlos pārliecināties, ka jūs neko svarīgu nepalaižat garām un
+                            nodrošināt lielāku skaidrību. <br><br>
+
+                            Kreisajā pusē jābūt tumši jūras zaļam dēlim ar nelielu gaiši jūras zaļu dēli augšpusē.
+                            Lūdzu, noklikšķiniet uz augšējās tāfeles, lai parādītu sadaļas (attēls 1). <br><br>
+
+                            Jābūt četrām pogām ar uzrakstu "1-Sadaļa" un "2-Sadaļa" utt. Sāciet, noklikšķinot uz otrās
+                            pogas. Mainīsies galvenais panelis, un jūs varēsiet redzēt dažas izmaiņas galvenajā panelī.
+                            <br><br>
+                            Kad esat pabeidzis lasīt 2. sadaļu, noklikšķiniet uz nākamās sadaļas pogas.
+                        </div>
+                        <div class="image">
+                            <img src="/attels1.png" style="height: max-content; ">
+                            <div style="align-self: flex-end">Attēls 1</div>
+                        </div>
+                    </div>
+                    <div class="sec2" style="display: none;">
+                        <div class="container1">
+                            <h1>Vietnes apraksts</h1><br><br>
+
+                            Es izveidoju vietni, kas ir manas skolas programmēšanas klases projekts. Tam ir vizuāli
+                            pievilcīgs dizains ar melnu fonu. Pirmoreiz apmeklējot vietni, centrā redzēsiet pogu ar
+                            uzrakstu "Sākt". <br><br>
+
+                            Noklikšķinot uz pogas Sākt, ekrānā tiks parādīta teksts vai īsziņa animētā veidā, gluži kā
+                            jūs
+                            sarunājaties ar virtuālo palīgu. Tekstā tiks jautāts, vai esat gatavs skatīt
+                            projektu.<br><br>
+
+                            Kad esat gatavs un noklikšķiniet uz pogas "Sākt', jūs redzēsiet ielādes joslu, kas parāda
+                            satura ielādes gaitu. Tas rada gaidīšanas sajūtu. Kad ielāde būs pabeigta, lapā parādīsies
+                            jauna sadaļa.<br><br>
+
+                            Šī sadaļa ir paredzēta, lai iepazīstinātu ar dažādiem projekta aspektiem. Tas sastāv no
+                            vairākām joslām, kuras var elastīgi izkārtot uz ekrāna. Katrs lodziņš apzīmē citu ar
+                            projektu saistītu tēmu. Šīs tēmas var būt tādas lietas, kā projekta mērķis,
+                            funkcijas, izstrādes process vai cita būtiska informācija.<br><br>
+
+                            Lai izpētītu konkrētu tēmu, varat noklikšķināt uz atbilstošā lodziņa. Šī darbība atvērs
+                            vairāk informācijas saistībā ar konkrēto tēmu. Iespējams, redzēsiet teksta aprakstus,
+                            attēlus
+                            vai pat interaktīvus elementus, kas demonstrē dažādus projekta funkcionalitātes
+                            aspektus.<br><br>
+
+                            Šīs vietnes mērķis ir sekot līdzi sistēmas izstrādes dzīves ciklam, kas nozīmē, ka tā virzās
+                            no sākotnējās idejas līdz plānošanas, prasību apkopošanas, analīzes, projektēšanas un
+                            izstrādes posmiem. Tā mērķis ir demonstrēt projektu saistošā un interaktīvā veidā, ļaujot
+                            jums ienirt dažādās paveiktā darba jomās.<br><br>
+
+                        </div>
+                    </div>
+                    <div class="sec3" style="display: none;">
+                        <div class="container1">
+                            <h1>Sistēmas izstrādes dzīves cikls</h1><br><br>
+                            Plānošana...
+                            Plānošanas posmā es būtu izdomājis un apkopojis ideju par to, kā vēlos, lai būtu
+                            vietne izskatītos un darbotos. Iespējams, esat apsvēris vispārējo izkārtojumu, krāsu shēmu
+                            un vispārējo lietotāja pieredzi. Iespējams, esat domājis arī par vietnes mērķi un to, ko
+                            vēlaties parādīt savā projektā. Šajā posmā ir jāpieņem lēmumi par sākotnējo koncepciju un
+                            jāizvirza mērķi jūsu vietnei.<br><br>
+
+                            Analīze...
+                            Tas ietver galveno funkciju un funkciju noteikšanu, kuras vēlaties iekļaut. Piemēram, es
+                            minēju sākuma pogu,
+                            animētu tekstu, ielādes joslu un sadaļu pogas. Šajā posmā es būtu rūpīgi izskatījis šīs
+                            prasības un noteicis, kā tās atbilst jūsu projekta mērķiem. Iespējams, esmu ņēmis vērā arī
+                            tādus faktorus, kā lietotāju mijiedarbība un kopējā lietotāju plūsma vietnē.<br><br>
+
+                            Projektēšana...
+                            Projektēšanas stadijā ea būtu koncentrējies uz savas vietnes vizuālo elementu izveidi. Tas
+                            ietver melnā fona izvēli, izlemšanu par sākuma pogas izvietojumu un izskatu, kā arī sadaļu
+                            pogu un elastīgo lodziņu izkārtojuma noformēšanu.<br><br>
+
+                            Izstrāde...
+                            Izstrādes stadijā es iedzīvinātu savu dizainu un idejas. Tas ietver vajadzīgā koda
+                            rakstīšanu un vietnes funkcionalitātes ieviešanu. Es būtu strādājis pie programmēšanas
+                            aspekta, nodrošinot, ka sākuma poga, teksta animācija, ielādes josla un sadaļu pogas
+                            darbojas, kā paredzēts. S'ajā posmā ir nepieciešamas tehniskas prasmes un uzmanība detaļām,
+                            lai nodrošinātu, ka vietne darbojas nevainojami un nodrošina vēlamo interaktīvo
+                            pieredzi.<br><br>
+                            <img src="/plan.png" style="width: 100%; ">
+                        </div>
+                    </div>
+                    <div class="sec4" style="display: none;">
+                        <h1>Nobeigums</h1><br><br>
+                        Beidzot, pēc rūpīgas katras sadaļas izpētes un visa projekta informācijas apkopošanas, es ceru,
+                        ka jūs iegūsiet pilnīgu izpratni par manā projektā ieguldīto smago darbu un centību. Katrs
+                        aspekts šajā vietnē, sākot no uzmanīgi izvēlētiem dizaina elementiem līdz vienmērīgai
+                        funkcionalitātei, ir izstrādāts, lai jums sniegtu aizraujošu pieredzi.<br><br>
+
+                        Manas galvenās domas un mērķis, veidojot šo vietni, bija radīt interaktīvu platformu, kurā jūs
+                        ne tikai varat uzzināt par projektu, bet arī jūtaties iesaistīti tā izstrādes procesā. Es
+                        vēlējos jums parādīt ne tikai galīgo rezultātu, bet arī plānošanas, analīzes, projektēšanas un
+                        izstrādes posmus, kas bija svarīga daļa no šī procesa.<br><br>
+
+                        Es ceru, ka, izmantojot šo vietni, jūs spēsiet novērtēt idejas un pūles, kas tika ieguldītas,
+                        lai īstenotu manu projektu. Neatkarīgi no tā, vai esat studentis, interesēts apmeklētājs vai
+                        kāds, kas izrāda interesi par programmēšanu, es vēlos, lai mans projekts kalpotu kā iedvesma un
+                        demonstrētu manas iegūtās prasmes un zināšanas.<br><br>
+
+                        Paldies jums par to, ka veltījāt laiku, lai izpētītu manu vietni un iepazītos ar manu projektu.
+                        Es patiešām ceru, ka jums patika jūsu ceļojums caur manu projektu.<br><br>
+
+                        Atcerieties, ka katrs lielisks projekts sākas ar ideju, un ar apņēmību un neatlaidību tas var
+                        kļūt par realitāti. Tāpēc turpiniet sapņot, pētīt un radīt.
+
+                    </div>
+                </div>
+            </div>
+            <div class="boardEnd">Autors: RihardsV10</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

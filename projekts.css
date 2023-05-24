@@ -1,0 +1,248 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+ks {
+    color: #dd0606;
+}
+
+p {
+    font-size: x-large;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+}
+
+li {
+    font-size: x-large;
+    font-family: monospace;
+    color: rgb(255, 255, 255);
+}
+
+.nextButton {
+    display: none;
+}
+
+.board {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.wrapper {
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+}
+
+.header {
+
+
+    background-color: #f0f0f0;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    line-height: 50px;
+    flex: 0 0 auto;
+
+}
+
+.board2 {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.boardEnd {
+  text-align: center;
+  line-height: 50px;
+  flex: 0 0 auto;
+  justify-content: center;
+  display: flex;
+  position: sticky;
+  background-color: #f0f0f0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.boardLeft {
+    background-color: #053634;
+    color: white;
+    width: 20%;
+    flex: 0 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+  
+  .arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+  
+  .options {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .options.active {
+    max-height: 800px;
+  }
+
+.everything {
+    font-size: x-large;
+    font-family: monospace;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: xx-large;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.nextButton {
+    background-color: transparent;
+    color: white;
+    display: none;
+    border: 2px solid white;
+    border-radius: 40px;
+    font-size: xx-large;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.button:hover,
+.nextButton:hover {
+    background-color: rgba(253, 253, 253, 0.158);
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.493);
+}
+
+.button2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #06ddb1;
+    border-radius: 40px;
+    font-size: xx-large;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+    margin-bottom: 200px;
+    border-right-style: hidden;
+}
+
+.button2:hover {
+
+    background-color: rgb(0 0 0 / 13%);
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.493);
+
+}
+
+.wiggle-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #06ddb1;
+    border-radius: 40px;
+    font-size: xx-large;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+    margin-bottom: 200px;
+    border-right-style: hidden;
+  }
+
+  .wiggle-button1 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #dd0606;
+    border-radius: 40px;
+    font-size: xx-large;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+    margin-bottom: 200px;
+    border-right-style: hidden;
+  }
+
+  .wiggle-button2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid #38ff13;
+    border-radius: 40px;
+    font-size: xx-large;
+    cursor: pointer;
+    opacity: 1;
+    transition: 0.5s;
+    margin-bottom: 200px;
+    border-right-style: hidden;
+  }
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-5deg); }
+    40% { transform: rotate(5deg); }
+    60% { transform: rotate(-3deg); }
+    80% { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+  }
+
+  .wiggle-button:hover {
+    animation: wiggle 0.5s;
+    background-color: rgb(0 0 0 / 13%);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.493);
+  }
+
+  .wiggle-button1:hover {
+    animation: wiggle 0.5s;
+    background-color: rgba(136, 0, 0, 0.13);
+    box-shadow: 0px 0px 25px rgba(243, 1, 1, 0.493);
+  }
+
+  .wiggle-button2:hover {
+    animation: wiggle 0.5s;
+    background-color: rgb(2 216 45 / 31%);
+    box-shadow: 0px 0px 25px rgba(3, 255, 66, 0.493);
+  }
+  
+  .image {
+    margin-top: 10px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+  }
